@@ -1,4 +1,4 @@
-// src/components/Sorting.tsx
+
 interface Props {
   sortOption: string;
   setSortOption: (value: string) => void;
