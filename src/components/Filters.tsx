@@ -21,7 +21,7 @@ export default function Filters({
 }: Props) {
   return (
     <div className="flex justify-center gap-2 mb-6">
-      {/* Year Dropdown */}
+     
       <select
         value={filterYear}
         onChange={(e) => setFilterYear(e.target.value)}
@@ -37,7 +37,7 @@ export default function Filters({
         )}
       </select>
 
-      {/* Author Filter */}
+      
       <input
         type="text"
         placeholder="Filter by author"
@@ -46,7 +46,7 @@ export default function Filters({
         className="p-2 border rounded-md"
       />
 
-      {/* Sort */}
+      
       <select
         value={sort}
         onChange={(e) => setSort(e.target.value)}
