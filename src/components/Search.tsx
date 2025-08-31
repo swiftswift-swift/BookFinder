@@ -24,7 +24,7 @@ export default function Search() {
   const [sortBy, setSortBy] = useState<"title" | "year" | "">("");
   const [languageFilter, setLanguageFilter] = useState("");
 
-  const limit = 20; // fetch more per page to avoid empty results
+  const limit = 20; 
 
   useEffect(() => {
     if (!query) return;
@@ -60,7 +60,7 @@ export default function Search() {
     fetchBooks();
   }, [query, page]);
 
-  // Safe filtering
+ 
   let filteredBooks = books;
   if (languageFilter.trim() !== "") {
     filteredBooks = filteredBooks.filter(
@@ -68,7 +68,7 @@ export default function Search() {
     );
   }
 
-  // Sorting
+  
   if (sortBy === "title") {
     filteredBooks = [...filteredBooks].sort((a, b) =>
       a.title.localeCompare(b.title)
