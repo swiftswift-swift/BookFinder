@@ -49,7 +49,7 @@ export default function Search() {
         }));
 
         setBooks(mappedBooks);
-        setTotalPages(Math.ceil(Math.min(data.numFound, 1000) / limit)); // cap at 1000 results
+        setTotalPages(Math.ceil(Math.min(data.numFound, 1000) / limit)); 
       } catch {
         setError("Failed to fetch books.");
       } finally {
