@@ -1,4 +1,4 @@
-// src/components/BookCard.tsx
+
 interface Book {
   key: string;
   title: string;
