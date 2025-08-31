@@ -53,7 +53,7 @@ export default function Home() {
   return (
     <div>
       <h1 className="text-3xl font-bold mb-6 text-center flex items-center justify-center gap-2">
-        <span style={{ fontSize: 32 }}>📚</span> {/* ✅ Use Unicode emoji */}
+        <span style={{ fontSize: 32 }}>📚</span> 
         Explore Books by Category
       </h1>
 
